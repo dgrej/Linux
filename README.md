@@ -1,2 +1,2 @@
 # Linux
-apanhado de artigos sobre Linux
+ artigos sobre Linux pegos na rede
