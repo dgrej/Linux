@@ -1,0 +1,837 @@
+
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="pt-BR">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="pt-BR">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8) ]><!-->
+<html lang="pt-BR">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Comandos Importantes Linux | </title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="http://lbrvirtual.com.br/blog/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="http://lbrvirtual.com.br/blog/wp-content/themes/ezyreader/js/html5.js"></script>
+	<![endif]-->
+	<link rel="alternate" type="application/rss+xml" title="Feed para Blog da Liberty &raquo;" href="http://lbrvirtual.com.br/blog/index.php/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para Blog da Liberty &raquo;" href="http://lbrvirtual.com.br/blog/index.php/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para Blog da Liberty &raquo; Comandos Importantes Linux" href="http://lbrvirtual.com.br/blog/index.php/2015/09/12/comandos-importantes-linux/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/lbrvirtual.com.br\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='ezyreader-main-css'  href='http://lbrvirtual.com.br/blog/wp-content/themes/ezyreader/style.css?ver=4.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='ezyreader-navigationCss-css'  href='http://lbrvirtual.com.br/blog/wp-content/themes/ezyreader/css/dropmenu.css?ver=4.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='ezyreader-responsive-css'  href='http://lbrvirtual.com.br/blog/wp-content/themes/ezyreader/css/responsive.css?ver=4.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='http://lbrvirtual.com.br/blog/wp-content/themes/ezyreader/css/font-awesome.min.css?ver=4.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='open-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans' type='text/css' media='all' />
+<link rel='stylesheet' id='roboto-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Roboto' type='text/css' media='all' />
+<script type='text/javascript' src='http://lbrvirtual.com.br/blog/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://lbrvirtual.com.br/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='http://lbrvirtual.com.br/blog/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lbrvirtual.com.br/blog/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://lbrvirtual.com.br/blog/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Instalando e configurando o noip no linux' href='http://lbrvirtual.com.br/blog/index.php/2015/09/12/instalando-e-configurando-o-noip-no-linux/' />
+<link rel='next' title='Instalando e Configurando o Bind9 no Ubuntu/Debian' href='http://lbrvirtual.com.br/blog/index.php/2015/09/13/instalando-e-configurando-o-bind9-no-ubuntudebian/' />
+<meta name="generator" content="WordPress 4.5.3" />
+<link rel="canonical" href="http://lbrvirtual.com.br/blog/index.php/2015/09/12/comandos-importantes-linux/" />
+<link rel='shortlink' href='http://lbrvirtual.com.br/blog/?p=87' />
+<link rel="alternate" type="application/json+oembed" href="http://lbrvirtual.com.br/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flbrvirtual.com.br%2Fblog%2Findex.php%2F2015%2F09%2F12%2Fcomandos-importantes-linux%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://lbrvirtual.com.br/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flbrvirtual.com.br%2Fblog%2Findex.php%2F2015%2F09%2F12%2Fcomandos-importantes-linux%2F&#038;format=xml" />
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #bffff3; background-image: url('http://lbrvirtual.com.br/blog/wp-content/uploads/2015/08/templatemo_header.png'); background-repeat: repeat-x; background-position: top center; background-attachment: scroll; }
+</style>
+<link rel="icon" href="http://lbrvirtual.com.br/blog/wp-content/uploads/2015/08/cropped-logo-32x32.png" sizes="32x32" />
+<link rel="icon" href="http://lbrvirtual.com.br/blog/wp-content/uploads/2015/08/cropped-logo-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://lbrvirtual.com.br/blog/wp-content/uploads/2015/08/cropped-logo-180x180.png" />
+<meta name="msapplication-TileImage" content="http://lbrvirtual.com.br/blog/wp-content/uploads/2015/08/cropped-logo-270x270.png" />
+</head>
+
+<body class="single single-post postid-87 single-format-standard custom-background">
+
+<div class="wrap">
+	<div class="container">
+
+     <!-- Header START -->
+<div class="header">    
+     <!-- Logo START -->
+    	<div class="logo">
+                <a href='http://lbrvirtual.com.br/blog/' title='Blog da Liberty' rel='home'><img src='http://lbrvirtual.com.br/blog/wp-content/uploads/2015/09/logo2.png' alt='Blog da Liberty'></a>
+        </div>
+    <!-- Logo Ends -->
+</div>
+     <!-- Header Ends -->
+
+     <!-- navigation START here -->
+       <div id="menu" class="nav"><ul id="menu-principal" class="menu"><li id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-20"><a href="http://lbrvirtual.com.br/blog/">Home</a></li>
+<li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45"><a href="http://lbrvirtual.com.br/blog/index.php/linux/">Linux</a></li>
+<li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a href="http://lbrvirtual.com.br/blog/index.php/simulador-de-voo/">Simulador de Voo</a></li>
+</ul></div>      <!-- navigation Ends here -->     
+      <!-- Responsive navigation START here This will not show in normal screens-->
+      <div id="menu-icon" class="btnlink">Menu</div>
+         <div id="nav-responsive" class="nav-responsive"><ul id="menu-principal-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-20"><a href="http://lbrvirtual.com.br/blog/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45"><a href="http://lbrvirtual.com.br/blog/index.php/linux/">Linux</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a href="http://lbrvirtual.com.br/blog/index.php/simulador-de-voo/">Simulador de Voo</a></li>
+</ul></div>       <!-- Responsive navigation Ends here This will not show in normal screens-->
+     
+<div class="clear"></div>
+
+<div class="pagetitle"><h1 style="">Comandos Importantes Linux</h1></div>
+
+<div class="column-three-fourth">
+
+<div id="post-87" class="post-87 post type-post status-publish format-standard hentry category-desktop category-kernel category-linux category-servidor">
+	
+        <div class="postdetails">
+            <i class="fa fa-calendar"></i> set 12, 2015 | 
+            <i class="fa fa-user"></i> <a href="http://lbrvirtual.com.br/blog/index.php/author/adminblog/" title="Posts de adminblog" rel="author">adminblog</a>            
+       | <i class="fa fa-comments"></i> <a href="http://lbrvirtual.com.br/blog/index.php/2015/09/12/comandos-importantes-linux/#respond" class="comments-link" >Say something</a> 
+		            
+        </div>
+
+	<p class="line874"><img class="attachment alignleft" title="terminal.png" src="http://wiki.ubuntu-br.org/ComandosBasicos?action=AttachFile&amp;do=get&amp;target=terminal.png" alt="terminal.png" /></p>
+<p class="line874">Um comando do Linux é uma palavra especial que representa uma ou mais ações. Um interpretador de comandos também é conhecido como shell ou modo texto. Ele é o programa responsável por interpretar essas instruções enviadas pelo usuário e seus programas para o kernel. No Linux, você poderá ter vários interpretadores de comandos (ao contrário do que acontece no Windows que só tem o command.com). <span id="line-27" class="anchor"></span><span id="line-28" class="anchor"></span></p>
+<p class="line862">O interpretador de comandos é que executa comandos lidos do teclado ou de um arquivo executável. É a principal ligação entre o usuário. Entre os programas interpretadores de comandos podemos destacar o <a class="http" href="http://pt.wikipedia.org/wiki/Bash">bash</a>, <a class="http" href="http://pt.wikipedia.org/wiki/Csh">csh</a> e <a class="http" href="http://pt.wikipedia.org/wiki/Bourne_shell">sh</a> entre outros. <span id="line-29" class="anchor"></span><span id="line-30" class="anchor"></span></p>
+<p class="line862">Entre eles o mais usado é o <strong><a class="http" href="http://pt.wikipedia.org/wiki/Bash">Bash (Bourne Again Shell)</a></strong>, criado por S.R. Bourne. Os comandos podem ser enviados de duas maneiras para o interpretador: <span id="line-31" class="anchor"></span><span id="line-32" class="anchor"></span></p>
+<ul>
+<li>
+<p class="line891"><strong>Interativa</strong> &#8211; Os comandos são digitados no teclado pelo usuário e passados ao interpretador de comandos um a um. Neste modo o computador depende do usuário para executar uma tarefa ou o próximo comando. <span id="line-33" class="anchor"></span><span id="line-34" class="anchor"></span></p>
+</li>
+<li class="gap">
+<p class="line891"><strong>Não-interativa</strong> &#8211; São usados arquivos de comandos (scripts) criados pelo usuário para o computador executar os comandos na ordem encontrada no arquivo. Neste modo, o computador executa os comandos do arquivo um por um, e dependendo do término do comando, o script pode verificar qual será próximo comando que será executado e dar continuidade ou não ao processamento. <span id="line-35" class="anchor"></span><span id="line-36" class="anchor"></span></p>
+</li>
+</ul>
+<p class="line874">Esse sistema é muito útil quando temos que digitar por várias vezes seguidas um mesmo comando ou para compilar algum programa complexo. <span id="line-37" class="anchor"></span><span id="line-38" class="anchor"></span></p>
+<p class="line862">Uma característica interessante do <a class="http" href="http://pt.wikipedia.org/wiki/Bash">bash</a> é que ele possui a função de auto-completar os nomes de comandos que foram digitados via entrada padrão. Isso é feito pressionando-se a tecla TAB; o comando é completado e acrescentando um espaço. <span id="line-39" class="anchor"></span><span id="line-40" class="anchor"></span></p>
+<p class="line862">Isso funciona sem problemas para comandos internos; caso o comando não seja encontrado, o <a class="http" href="http://pt.wikipedia.org/wiki/Bash">bash</a> emite um beep. Por exemplo, na sua pasta raiz tente digitar cd pro (aperte TAB)+as( aperte TAB)+os( aperte TAB)+d(aperte TAB) e veja como foi fácil digitar um caminho para entrar no local: <strong>/proc/asound/oss/devices</strong>. <span id="line-41" class="anchor"></span><span id="line-42" class="anchor"></span></p>
+<p class="line862">Outro recurso muito interessante do <a class="http" href="http://pt.wikipedia.org/wiki/Bash">bash</a>, é que você pode repetir um comando executado sem ter que digitá-lo novamente. Isso é possível utilizando o caractere <strong>&#8220;!&#8221;</strong> na frente do comando que você deseja repetir. O <a class="http" href="http://pt.wikipedia.org/wiki/Bash">bash</a> vai buscar aquele comando no histórico e se lá tiver algo parecido o comando será executado. Veja o exemplo abaixo com esta seqüência de comandos: <span id="line-43" class="anchor"></span><span id="line-44" class="anchor"></span></p>
+<pre><span id="line-1" class="anchor"></span>tail -f /var/log/squid/access.log
+<span id="line-2" class="anchor"></span>cd /etc/
+<span id="line-3" class="anchor"></span>ls -hl
+<span id="line-4" class="anchor"></span>!tail</pre>
+<p class="line862">O comando <strong>&#8220;!tail&#8221;</strong> irá informar ao shell (bash) para executar o último comando <strong>tail</strong> executado, no caso, <strong>&#8220;tail -f /var/log/squid/access.log&#8221;</strong>, e você passara a ver novamente os LOG&#8217;s do Squid em tempo real. <span id="line-52" class="anchor"></span><span id="line-53" class="anchor"></span></p>
+<p class="line862">Para execução de muitos comandos é necessário ter privilégios de administrador, então como no Ubuntu o usuário <strong>root</strong> por questões de segurança se encontra desabilitado, será necessário o uso do <strong>&#8220;sudo&#8221;</strong>. Assim sendo sempre que um comando necessitar deste privilégio, o mesmo estará precedido do <strong>sudo</strong>. <span id="line-54" class="anchor"></span><span id="line-55" class="anchor"></span></p>
+<p class="line862">Adicione também o comando <strong>sudo</strong> na frente de todos os comandos, caso esteja trabalhando em um diretório ou em arquivos que não lhe pertencem (arquivos do sistema, por exemplo). Veja <a href="http://wiki.ubuntu-br.org/RootSudo">RootSudo</a> para maiores informações sobre o <strong>sudo</strong>. <span id="line-56" class="anchor"></span><span id="line-57" class="anchor"></span></p>
+<h3 id="Documenta.2BAOcA4w-o">Documentação</h3>
+<ul>
+<li>
+<p class="line891"><strong><a class="http" href="http://linuxcommand.org/man_pages/man1.html">man</a></strong> &#8211; Formata e exibe uma página man (<a class="http" href="http://pt.wikipedia.org/wiki/Man_page">man page</a>) O comando <strong>man</strong> é usado para mostrar o manual de outros comandos. Tente <strong>&#8220;man man&#8221;</strong> para ver a página do manual do próprio <strong>man</strong>. Veja a seção &#8220;Man &amp; Getting Help&#8221; para mais informações. <span id="line-59" class="anchor"></span><span id="line-60" class="anchor"></span></p>
+</li>
+<li class="gap">
+<p class="line891"><strong><a class="http" href="http://linuxcommand.org/man_pages/help1.html">help</a></strong> &#8211; Exibe informações sobre os comandos internos do <a class="http" href="http://pt.wikipedia.org/wiki/Bash">Bash</a>. Ex.: <strong>”help logout”</strong> <span id="line-61" class="anchor"></span><span id="line-62" class="anchor"></span></p>
+</li>
+<li class="gap">
+<p class="line891"><strong><a class="http" href="http://linuxcommand.org/man_pages/info1.html">info</a></strong> &#8211; Exibe documentação no formato Info, sendo que a navegação pelo documento é feito por meio de comandos internos do Info. Ex.: <strong>”info emacs”</strong></p>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>Lista de comandos mais usados</h3>
+<p>Numa manutenção de rotina usa-se os comandos em momentos de monitoração e (ou) urgência:</p>
+<ul>
+<li><strong>ls</strong>: Lista todos os arquivos do diretório</li>
+<li><strong>df</strong>: Mostra a quantidade de espaço usada no disco rígido</li>
+<li><strong>top</strong>: Mostra o uso da memória</li>
+<li><strong>cd</strong>: Acessa uma determinada pasta (diretório)</li>
+<li><strong>mkdir</strong>: Cria um diretório</li>
+<li><strong>rm</strong>: Remove um arquivo/diretório</li>
+<li><strong>cat</strong>: Abre um arquivo</li>
+<li><strong>vi</strong>: Abre o editor vi(lê-se <strong>viai</strong>) para editar/criar arquivos</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Comandos de Controle e Acesso</h3>
+<ul>
+<li><strong>exit</strong>: Terminar a sessão, ou seja, a shell (mais ajuda digitando man sh ou man csh)</li>
+<li><strong>logout</strong>: Des-logar, ou seja, terminar a sessão atual, mas apenas na C shell e na bash shell</li>
+<li><strong>passwd</strong>: Mudar a password do nosso utilizador (usuário logado)</li>
+<li><strong>rlogin</strong>: Logar de forma segura em outro sistema Unix/Linux</li>
+<li><strong>ssh</strong>: Sessão segura, vem de secure shell, e permite-nos logar num servidor remoto através do protocolo ssh</li>
+<li><strong>slogin</strong>: Versão segura do rlogin</li>
+<li><strong>yppasswd</strong>: Mudar a password do nosso utilizador nas páginas amarelas (yellow pages)</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Comandos de Comunicações</h3>
+<ul>
+<li><strong>mail</strong>: Enviar e receber emails</li>
+<li><strong>mesg</strong>: Permitir ou negar mensagens de terminal e pedidos de conversação (talk requests)</li>
+<li><strong>pine</strong>: Outra forma de enviar e receber emails, uma ferramenta rápida e prática</li>
+<li><strong>talk</strong>: Falar com outros utilizadores que estejam logados no momento</li>
+<li><strong>write</strong>: Escrever para outros utilizadores que estejam logados no momento</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Comandos de Ajuda e Documentação</h3>
+<ul>
+<li><strong>apropos</strong>: Localiza comandos por pesquisa de palavra-chave</li>
+<li><strong>find</strong>: Localizar arquivos, como por exemplo: find . -name *.txt -print, para pesquisa de arquivos de texto do diretório atual</li>
+<li><strong>info</strong>: Abre o explorador de informações</li>
+<li><strong>man</strong>: Manual muito completo, pesquisa informação acerca de todos os comandos que necessitemos de saber, como por exemplo man find</li>
+<li><strong>whatis</strong>: Descreve o que um determinado comando é/faz</li>
+<li><strong>whereis</strong>: Localizar a página de ajuda (man page), código fonte, ou arquivos binários, de um determinado programa</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Comandos de Edição de Texto</h3>
+<ul>
+<li><strong>emacs</strong>: Editor de texto screen-oriented</li>
+<li><strong>pico</strong>: Editor de texto screen-oriented, também chamado de nano</li>
+<li><strong>sed</strong>: Editor de texto stream-oriented</li>
+<li><strong>vi</strong>: Editor de texto full-screen</li>
+<li><strong>vim</strong>: Editor de texto full-screen melhorado (vi improved)</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Comandos de Gestão de Arquivos e Diretórios</h3>
+<ul>
+<li><strong>cd</strong>: Mudar de diretório atual, como por exemplo cd diretório, cd .., cd /</li>
+<li><strong>chmod</strong>: Mudar a proteção de um arquivo ou diretório, como por exemplo chmod 777, parecido com o attrib do MS-DOS</li>
+<li><strong>chown</strong>: Mudar o dono ou grupo de um arquivo ou diretório, vem de change owner</li>
+<li><strong>chgrp</strong>: Mudar o grupo de um arquivo ou diretório</li>
+<li><strong>cmp</strong>: Compara dois arquivos</li>
+<li><strong>comm</strong>: Seleciona ou rejeita linhas comuns a dois arquivos selecionados</li>
+<li><strong>cp</strong>: Copia arquivos, como o copy do MS-DOS</li>
+<li><strong>crypt</strong>: Encripta ou Descripta arquivos (apenas CCWF)</li>
+<li><strong>diff</strong>: Compara o conteúdo de dois arquivos ASCII</li>
+<li><strong>file</strong>: Determina o tipo de arquivo</li>
+<li><strong>grep</strong>: Procura um arquivo por um padrão, sendo um filtro muito útil e usado, por exemplo um cat a.txt | grep ola irá mostrar-nos apenas as linhas do arquivo a.txt que contenham a palavra “ola”</li>
+<li><strong>gzip</strong>: Comprime ou expande arquivo</li>
+<li><strong>ln</strong>: Cria um link a um arquivo</li>
+<li><strong>ls</strong>: Lista o conteúdo de uma diretório, semelhante ao comando dir no MS-DOS</li>
+<li><strong>lsof</strong>: Lista os arquivos abertos, vem de list open files</li>
+<li><strong>mkdir</strong>: Cria uma diretório, vem de make directory”</li>
+<li><strong>mv</strong>: Move ou renomeia arquivos ou diretórios</li>
+<li><strong>pwd</strong>: Mostra-nos o caminho por inteiro da diretório em que nos encontramos em dado momento, ou seja um pathname</li>
+<li><strong>quota</strong>: Mostra-nos o uso do disco e os limites</li>
+<li><strong>rm</strong>: Apaga arquivos, vem de remove, e é semelhante ao comando del no MS-DOS, é preciso ter cuidado com o comando rm * pois apaga tudo sem confirmação por defeito</li>
+<li><strong>rmdir</strong>: Apaga diretório, vem de remove directory</li>
+<li><strong>stat</strong>: Mostra o estado de um arquivo, útil para saber por exemplo a hora e data do último acesso ao mesmo</li>
+<li><strong>sync</strong>: Faz um flush aos buffers do sistema de arquivos, sincroniza os dados no disco com a memória, ou seja escreve todos os dados presentes nos buffers da memória para o disco</li>
+<li><strong>sort</strong>: Ordena, une ou compara texto, podendo ser usado para extrair informações dos arquivos de texto ou mesmo para ordenar dados de outros comandos como por exemplo listar arquivos ordenados pelo nome</li>
+<li><strong>tar</strong>: Cria ou extrai arquivos, muito usado como programa de backup ou compressão de arquivos</li>
+<li><strong>tee</strong>: Copia o input para um standard output e outros arquivos</li>
+<li><strong>tr</strong>: Traduz caracteres</li>
+<li><strong>umask</strong>: Muda as proteções de arquivos</li>
+<li><strong>uncompress</strong>: Restaura um arquivo comprimido</li>
+<li><strong>uniq</strong>: Reporta ou apaga linhas repetidas num arquivo</li>
+<li><strong>wc</strong>: Conta linhas, palavras e mesmo caracteres num arquivo</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Exibição ou Impressão de Arquivos</h3>
+<ul>
+<li><strong>cat</strong>: Mostra o conteúdo de um arquivo, como o comando type do MD-DOS, e é muito usado também para concatenar arquivos, como por exemplo fazendo cat a.txt b.txt &gt; c.txt” para juntar o arquivo a.txt e b.txt num único de nome c.txt</li>
+<li><strong>fold</strong>: Encurta, ou seja, faz um fold das linhas longas para caberem no dispositivo de output</li>
+<li><strong>head</strong>: Mostra as primeiras linhas de um arquivo, como por exemplo com head -10 a.txt, ou usado como filtro para mostrar apenas os primeiros x resultados de outro comando</li>
+<li><strong>lpq</strong>: Examina a spooling queue da impressora</li>
+<li><strong>lpr</strong>: Imprime um arquivo</li>
+<li><strong>lprm</strong>: Remove jobs da spooling queue da impressora</li>
+<li><strong>more</strong>: Mostra o conteúdo de um arquivo, mas apenas um ecrã de cada vez, ou mesmo output de outros comandos, como por exemplo ls | more</li>
+<li><strong>less</strong>: Funciona como o more, mas com menos features, menos características e potenciais usos</li>
+<li><strong>page</strong>: Funciona de forma parecida com o comando more, mas exibe os ecrãs de forma invertida ao comando more</li>
+<li><strong>pr</strong>: Pagina um arquivo para posterior impressão</li>
+<li><strong>tail</strong>: Funciona de forma inversa ao comando head, mostra-nos as últimas linhas de um arquivo ou mesmo do output de outro comando, quando usado como filtro</li>
+<li><strong>zcat</strong>: Mostra-nos um arquivo comprimido</li>
+<li><strong>xv</strong>: Serve para exibir, imprimir ou mesmo manipular imagens</li>
+<li><strong>gv</strong>: Exibe arquivos ps e pdf</li>
+<li><strong>xpdf</strong>: Exibe arquivos pdf, usa o gv</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Comandos de Transferência de Arquivos</h3>
+<ul>
+<li><strong>ftp</strong>: Vem de file transfer protocol, e permite-nos, usando o protocolo de transferência de arquivos ftp, transferir arquivos entre vários hosts de uma rede, como a um servidor de ftp para enviar ou puxar arquivos</li>
+<li><strong>rsync</strong>: Sincroniza de forma rápida e flexível dados entre dois computadores</li>
+<li><strong>scp</strong>: Versão segura do rcp</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Comandos de Notícias ou Rede</h3>
+<ul>
+<li><strong>netstat</strong>: Mostra o estado da rede</li>
+<li><strong>rsh</strong>: Um shell em outros sistemas UNIX</li>
+<li><strong>ssh</strong>: Versão segura do rsh</li>
+<li><strong>nmap</strong>: Poderoso port-scan, para visualizarmos portas abertas num dado host</li>
+<li><strong>ifconfig</strong>: Visualizar os ips da nossa máquina, entre outras funções relacionadas com ips</li>
+<li><strong>ping</strong>: Pingar um determinado host, ou seja, enviar pacotes icmp para um determinado host e medir tempos de resposta, entre outras coisas</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Comandos de Controlo de Processos</h3>
+<ul>
+<li><strong>kill</strong>: Mata um processo, como por exemplo kill -kill 100ou kill -9 100 ou kill -9 %1</li>
+<li><strong>bg</strong>: Coloca um processo suspenso em background</li>
+<li><strong>fg</strong>: Ao contrário do comando bg, o fg traz de volta um processo ao foreground</li>
+<li><strong>jobs</strong>: Permite-nos visualizar jobs em execução, quando corremos uma aplicação em background, poderemos ver esse job com este comando, e termina-lo com um comando kill -9 %1, se for o jobnúmero 1, por exemplo</li>
+<li><strong>top</strong>: Lista os processos que mais cpu usam, útil para verificar que processos estão a provocar um uso excessivo de memória, e quanta percentagem decpu cada um usa em dado momento</li>
+<li><strong>^y</strong>: Suspende o processo no próximo pedido de input</li>
+<li><strong>^z</strong>: Suspende o processo actual</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Comandos de Informação de Estado</h3>
+<ul>
+<li><strong>cal</strong>: Exibe um simples calendário.</li>
+<li><strong>clock</strong>: Define a hora do processador</li>
+<li><strong>date</strong>: Exibe a data e hora</li>
+<li><strong>df</strong>: Exibe um resumo do espaço livre em disco</li>
+<li><strong>du</strong>: Exibe um resumo do uso do espaço em disco</li>
+<li><strong>env</strong>: Exibe as variáveis de ambiente</li>
+<li><strong>finger</strong>: Pesquisa informações de utilizadores</li>
+<li><strong>history</strong>: Lista os últimos comandos usados, muito útil para lembrar também de que comandos foram usados para fazer determinada acção no passado ou o que foi feito em dada altura</li>
+<li><strong>hwclock</strong>: Consulta ou define o relógio do hardware (Hardware Clock).
+<ul>
+<li>
+<p class="line891"><strong>&#8220;sudo hwclock -s&#8221;</strong> para atribuir ao sistema a data e hora do hardware (BIOS). <span id="line-73" class="anchor"></span></p>
+</li>
+<li>
+<p class="line891"><strong>&#8220;sudo hwclock &#8211;set &#8211;date=032914502007&#8221;</strong> para definir a data e hora do hardware como 14:50 h de 29/03/2007.</p>
+</li>
+</ul>
+</li>
+<li><strong>last</strong>: Indica o último login de utilizadores</li>
+<li><strong>lpq</strong>: Examina a spool queue</li>
+<li><strong>manpath</strong>: Mostra a path de procura para as páginas do comando man</li>
+<li><strong>printenv</strong>: Imprime as variáveis de ambiente</li>
+<li><strong>ps</strong>: Lista a lista de processos em execução, útil para saber o pid de um processo para o mandar abaixo com o comando kill, entre outras coisas</li>
+<li><strong>pwd</strong>: Mostra-nos o caminho por inteiro do diretório em que nos encontramos em dado momento, ou seja um pathname</li>
+<li><strong>set</strong>: Define variáveis da sessão, ou seja, da shell, na C shell, na bash ou na ksh</li>
+<li><strong>spend</strong>: Lista os custos ACITS UNIX até à data</li>
+<li><strong>time</strong> Mede o tempo de execução de programas</li>
+<li><strong>uptime</strong>: Diz-nos há quanto tempo o sistema está funcional, quando foi ligado e o seu uptime</li>
+<li><strong>w</strong>: Mostra-nos quem está no sistema ou que comando cada job está a executar</li>
+<li><strong>who</strong>: Mostra-nos quem está logado no sistema</li>
+<li><strong>whois</strong>: Serviço de diretório de domínios da Internet, permite-nos saber informações sobre determinados domínios na Internet, quando um domínio foi registado, quando expira, etc</li>
+<li><strong>whoami</strong>: Diz-nos quem é o dono da shell</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Comandos de Processamento de Texto</h3>
+<ul>
+<li><strong>abiword</strong>: Processador de Texto Open Source</li>
+<li><strong>addbib</strong>: Cria ou modifica bases de dados bibliográficas</li>
+<li><strong>col</strong>: Reverte o filtro a line feeds</li>
+<li><strong>diction</strong>: Identifica sentenças com palavras</li>
+<li><strong>diffmk</strong>: Marca diferenças entre arquivos</li>
+<li><strong>dvips</strong>: Converte arquivos TeX DVI em arquivos PostScript</li>
+<li><strong>explain</strong>: Explica frases encontradas pelo programa diction</li>
+<li><strong>grap</strong>: Preprocessador pic para desenhar gráficos, usado em tarefas elementares de análises de dados</li>
+<li><strong>hyphen</strong>: Encontra palavras com hífens</li>
+<li><strong>ispell</strong>: Verifica a ortografia de forma interativa</li>
+<li><strong>latex</strong>: Formata texto em LaTeX, que é baseado no TeX</li>
+<li><strong>pdfelatex</strong>: Para documentos LaTeX em formato pdf</li>
+<li><strong>latex2html</strong>: Converter LaTeX para html</li>
+<li><strong>lookbib</strong>: Encontra referências bibliográficas</li>
+<li><strong>macref</strong>: Cria uma referência cruzada listando arquivos de macros nroff/troff</li>
+<li><strong>ndx</strong>: Cria uma página de indexação para um documento</li>
+<li><strong>neqn</strong>: Formata matemáticas com nroff</li>
+<li><strong>nroff</strong>: Formata texto para exibição simples</li>
+<li><strong>pic</strong>: Produz simples imagens para troff input</li>
+<li><strong>psdit</strong>: Filtra um output troff para a Apple LaserWriter</li>
+<li><strong>ptx</strong>: Cria uma indexação permutada mas não em CCWF</li>
+<li><strong>refer</strong>: Insere referências de bases de dados bibliográficas</li>
+<li><strong>roffbib</strong>: Faz o run off de uma base de dados bibliográfica</li>
+<li><strong>sortbib</strong>: Ordena uma base de dados bibliográfica</li>
+<li><strong>spell</strong>: Encontra erros de ortografia</li>
+<li><strong>style</strong>: Analisa as características superficiais de um documento</li>
+<li><strong>tbl</strong>: Formata tabelas para nroff/troff</li>
+<li><strong>tex</strong>: Formata texto</li>
+<li><strong>tpic</strong>: Converte arquivos pic source em comandos TeX</li>
+<li><strong>wget</strong>: Permite-nos fazer o download completo de páginas web, com todos os arquivos, de forma fácil e não interactiva, sem exigir por isso presença do utilizador, respeitando também o arquivorobots.txt</li>
+</ul>
+<p>&nbsp;</p>
+<h3 id="Shell_.28Bash.29_e_Utilit.2BAOE-rios_de_Terminal">Shell (Bash) e Utilitários de Terminal</h3>
+<ul>
+<li>
+<p class="line891"><strong><a class="http" href="http://linuxcommand.org/man_pages/alias1.html">alias</a></strong> Tem como finalidade atribuir um “alias” (em inglês, significa outro nome) a outro comando, permitindo nomear um conjunto de comandos, a ser executado pelo sistema por um único nome. Caso nenhum parâmetro seja passado ao comando será listado todos alias atualmente definidos e ativos no sistema. <span id="line-360" class="anchor"></span></p>
+<ul>
+<li>
+<p class="line891"><strong>”alias ls=&#8217;ls -hal &#8211;color&#8217;”</strong> para definir uma alias <strong>ls</strong> para o comando <strong>ls -hal</strong> que irá mostrar os arquivos que estão no diretório correntel, inclusive os ocultos (-a) em forma de uma listagem (-l) e com as informações de tamanho mais amigável a nós seres humanos (-h) e diferenciado por cores. <span id="line-361" class="anchor"></span></p>
+</li>
+<li>
+<p class="line891"><strong>”alias fd=&#8217;mount /dev/fd0 /mnt/floppy; cd /mnt/floppy &amp;&amp; ls&#8217;”</strong> para criar um alias chamado <strong>fd</strong> que montará um disquete, acessando e listando seu conteúdo. Observe que, neste exemplo, foram usados dois diferentes separadores de comandos: <strong>ponto-e-vírgula</strong> e <strong>&amp;&amp;</strong>. Comandos separados por <strong>;</strong> são executados em seqüência. Comandos separados por <strong>&amp;&amp;</strong> são executados de forma condicional, ou seja, o comando após o separador só é executado se o comando anterior tiver sido executado com sucesso. <span id="line-362" class="anchor"></span></p>
+</li>
+<li>
+<p class="line891"><strong>”alias mcdrom=&#8217;mount /mnt/cdrom&#8217;”</strong> para criar um alias chamado <strong>mcdrom</strong> que ao ser executado monta o CD em uso. <span id="line-363" class="anchor"></span></p>
+</li>
+<li>
+<p class="line891"><strong>NOTA</strong>: Estes aliases são criados apenas para a sessão ativa do usuário, ou seja, ao deslogar do sistema os mesmos se perderão. Para criar aliases permanentes ao sistema edite o arquivo <strong>.bashrc</strong> de seu diretório pessoal e inclua no mesmo os comando desejados. Em contrapartida ao comando <strong>alias</strong> existe o comando <strong>unalias</strong> que faz justamente o inverso, removendo os alias criados. <span id="line-364" class="anchor"></span><span id="line-365" class="anchor"></span></p>
+</li>
+</ul>
+</li>
+<li class="gap">
+<p class="line891"><strong><a class="http" href="http://linuxcommand.org/man_pages/apropos1.html">apropos</a></strong> Pesquisa por um padrão na base de dados do comando <strong>whatis</strong> que veremos logo abaixo, informando quais comandos do Linux correspondem a uma determinada expressão. <span id="line-366" class="anchor"></span></p>
+<ul>
+<li>
+<p class="line891"><strong>”apropos apropos”</strong> (1) &#8211; search the whatis database for strings (Procura por expressões na base de dados whatis), ou seja exibe todos comandos Linux que tenham alguma correspondência a expressão “apropos”, no caso apenas o comando <strong>apropos</strong>. <span id="line-367" class="anchor"></span><span id="line-368" class="anchor"></span></p>
+</li>
+</ul>
+</li>
+<li class="gap">
+<p class="line891"><strong><a class="http" href="http://linuxcommand.org/man_pages/login1.html">login</a></strong> Permite a um usuário efetuar o logon (estabelecer uma conexão) no sistema, bem como ser utilizado para efetuar o logon com um usuário diferente do atual. <span id="line-369" class="anchor"></span></p>
+<ul>
+<li>
+<p class="line891"><strong>”login fulano”</strong> para efetuar o <a class="http" href="http://pt.wikipedia.org/wiki/Login">login</a> do usuário “fulano”. <span id="line-370" class="anchor"></span></p>
+</li>
+<li>
+<p class="line891"><strong>”login -p fulano”</strong> para efetuar o <a class="http" href="http://pt.wikipedia.org/wiki/Login">login</a> do usuário “fulano” sem destruir o ambiente do atual usuário. <span id="line-371" class="anchor"></span><span id="line-372" class="anchor"></span></p>
+</li>
+</ul>
+</li>
+<li class="gap">
+<p class="line891"><strong><a class="http" href="http://linuxcommand.org/man_pages/logout1.html">logout</a></strong> Finaliza um <a class="http" href="http://pt.wikipedia.org/wiki/Login">login</a> <a class="http" href="http://pt.wikipedia.org/wiki/Interpretador_de_comandos">shell</a> no console ou terminal. No modo gráfico, este comando encerra a sessão do usuário podendo fechar a janela do terminal, e em modo texto encerra a sessão do usuário levando-o de volta ao <a class="http" href="http://pt.wikipedia.org/wiki/Prompt">prompt</a> de <a class="http" href="http://pt.wikipedia.org/wiki/Login">login</a> do sistema. <span id="line-373" class="anchor"></span></p>
+<ul>
+<li>
+<p class="line891"><strong>”logout”</strong> O mesmo resultado pode ser alcançado executando o comando <strong>”<a class="http" href="http://linuxcommand.org/man_pages/exit1.html">exit</a>”</strong>. <span id="line-374" class="anchor"></span><span id="line-375" class="anchor"></span></p>
+</li>
+</ul>
+</li>
+<li class="gap">
+<p class="line891"><strong><a class="http" href="http://linuxcommand.org/man_pages/su1.html">su</a></strong> Permite alternar entre os usuários cadastrados do sistema, alterando o ID de usuário e grupo do atual usuário para outro usuário especificado. <span id="line-376" class="anchor"></span></p>
+<ul>
+<li>
+<p class="line891"><strong>”su fulano”</strong> permite alternar para o usuário “fulano” após senha de <a class="http" href="http://pt.wikipedia.org/wiki/Login">login</a> correta. <span id="line-377" class="anchor"></span></p>
+</li>
+<li>
+<p class="line891"><strong>”su fulano -c &#8216;vim /home/fulano/arq1&#8217;”</strong> permite executar o comando vim abrindo o arquivo “/home/fulano/arq1” como sendo o usuário “fulano”. O uso desta opção <strong>-c</strong> não começa um novo <a class="http" href="http://pt.wikipedia.org/wiki/Interpretador_de_comandos">shell</a>, apenas executa um comando como sendo o outro usuário especificado. <span id="line-378" class="anchor"></span><span id="line-379" class="anchor"></span></p>
+</li>
+</ul>
+</li>
+<li class="gap">
+<p class="line891"><strong><a class="http" href="http://linuxcommand.org/man_pages/sudo8.html">sudo</a></strong> Permite a um usuário autorizado conforme configurado no arquivo “/etc/sudoers”, a executar comandos como se fosse o super-usuário (root) ou outro usuário qualquer. Veja <a href="http://wiki.ubuntu-br.org/RootSudo">RootSudo</a> para maiores detalhes. <span id="line-380" class="anchor"></span><span id="line-381" class="anchor"></span></p>
+</li>
+<li class="gap">
+<p class="line891"><strong><a class="http" href="http://linuxcommand.org/man_pages/uname1.html">uname</a></strong> Exibe várias informações sobre o sistema. Caso nenhuma opção seja fornecida junto ao comando, apenas o nome do sistema operacional será exibido, equivalente a opção <strong>-s</strong>. <span id="line-382" class="anchor"></span></p>
+<ul>
+<li>
+<p class="line891"><strong>”uname -a”</strong> para exibir todas informações sobre o sistema. <span id="line-383" class="anchor"></span><span id="line-384" class="anchor"></span></p>
+</li>
+</ul>
+</li>
+<li class="gap">
+<p class="line891"><strong><a class="http" href="http://linuxcommand.org/man_pages/whatis1.html">whatis</a></strong> Pesquisa em uma base de dados que contem uma curta descrição dos comandos do sistema. Esta base de dados com os comandos do sistema é criada e atualizada com o comando <strong>”sudo makewhatis”</strong> <span id="line-385" class="anchor"></span></p>
+<ul>
+<li>
+<p class="line891"><strong>”whatis sudo halt”</strong> para obter uma descrição resumida dos comandos <strong>sudo</strong> e <strong>halt</strong>. <span id="line-386" class="anchor"></span><span id="line-387" class="anchor"></span></p>
+</li>
+</ul>
+</li>
+<li class="gap">
+<p class="line891"><strong><a class="http" href="http://linuxcommand.org/man_pages/whereis1.html">whereis</a></strong> Usado para localizar o <a class="http" href="http://pt.wikipedia.org/wiki/C%C3%B3digo_de_m%C3%A1quina">binário</a>, o <a class="http" href="http://pt.wikipedia.org/wiki/C%C3%B3digo_fonte">arquivos-fonte</a> e a página <strong>man</strong> (manual) dos comandos do sistema. <span id="line-388" class="anchor"></span></p>
+<ul>
+<li>
+<p class="line891"><strong>”whereis ls”</strong> para descobrir onde se encontra o arquivo <a class="http" href="http://pt.wikipedia.org/wiki/C%C3%B3digo_de_m%C3%A1quina">binário</a>, os <a class="http" href="http://pt.wikipedia.org/wiki/C%C3%B3digo_fonte">fontes</a> e o manual (<strong>man</strong>) do comando <strong>ls</strong>. <span id="line-389" class="anchor"></span><span id="line-390" class="anchor"></span></p>
+</li>
+</ul>
+</li>
+<li class="gap">
+<p class="line891"><strong><a class="http" href="http://linuxcommand.org/man_pages/which1.html">which</a></strong> Exibe o caminho completo na hierarquia de diretórios para os comandos do sistema. <span id="line-391" class="anchor"></span></p>
+<ul>
+<li>
+<p class="line891"><strong>”which firefox”</strong> para exibir o diretório onde se encontra o programa “firefox”. <span id="line-392" class="anchor"></span><span id="line-393" class="anchor"></span></p>
+</li>
+</ul>
+</li>
+<li class="gap">
+<p class="line891"><strong><a class="http" href="http://linuxcommand.org/man_pages/clear1.html">clear</a></strong> Limpa a tela movendo o cursor para primeira linha. Não existem parâmetros passados junto a este comando. <span id="line-394" class="anchor"></span><span id="line-395" class="anchor"></span></p>
+</li>
+<li class="gap">
+<p class="line891"><strong><a class="http" href="http://linuxcommand.org/man_pages/echo1.html">echo</a></strong> Permite exibir textos na tela. Este comando também exibe toda estrutura de diretórios e arquivos em ordem alfabética, porém sem formatar em colunas a listagem. <span id="line-396" class="anchor"></span></p>
+<ul>
+<li>
+<p class="line891"><strong>”echo &#8216;Olá mundo!&#8217;”</strong> envia para saída de tela a expressão “Olá mundo!”. <span id="line-397" class="anchor"></span></p>
+</li>
+<li>
+<p class="line891"><strong>”echo /etc/*”</strong> para listar todo conteúdo do diretório “/etc”. <span id="line-398" class="anchor"></span><span id="line-399" class="anchor"></span></p>
+</li>
+</ul>
+</li>
+<li class="gap">
+<p class="line891"><strong><a class="http" href="http://linuxcommand.org/man_pages/halt8.html">halt</a>, <a class="http" href="http://linuxcommand.org/man_pages/reboot8.html">reboot</a>, <a class="http" href="http://linuxcommand.org/man_pages/shutdown8.html">shutdown</a></strong> Respectivamente encerra, reinicializa e encerra ou reinicializa o sistema. <span id="line-400" class="anchor"></span></p>
+<ul>
+<li>
+<p class="line891"><strong>”sudo halt”</strong> para encerrar o sistema. <span id="line-401" class="anchor"></span></p>
+</li>
+<li>
+<p class="line891"><strong>”sudo reboot”</strong> para reiniciar imediatamente o sistema. Este comando equivale aos comandos <strong>”sudo init 6”</strong> e <strong>”sudo shutdown -r now”</strong>. <span id="line-402" class="anchor"></span></p>
+</li>
+<li>
+<p class="line891"><strong>”sudo shutdown -h now”</strong> para encerra o sistema imediatamente. <span id="line-403" class="anchor"></span></p>
+</li>
+<li>
+<p class="line891"><strong>”sudo shutdown -h +15”</strong> para encerrar o sistema daqui a 15 minutos. <span id="line-404" class="anchor"></span></p>
+</li>
+<li>
+<p class="line891"><strong>”sudo shutdown -r 20:30 &#8216;O sistema será reiniciado as 20:30 horas!&#8217;”</strong> para reiniciar o sistema as 20:30 horas enviando a mensagem &#8220;O sistema será reiniciado as 20:30 horas!&#8221; a todos usuários logados. <span id="line-405" class="anchor"></span></p>
+</li>
+<li>
+<p class="line891"><strong>NOTA</strong>: O comando <strong>”sudo init 0”</strong> também pode ser usado para encerramento do sistema. O comando <strong>shutdown</strong> é a forma mais segura de reiniciar e finalizar o sistema, advertindo os usuários logados e bloqueando novos logons.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Web</h3>
+<ul>
+<li><strong>html2ps</strong>: Conversor de html para ps</li>
+<li><strong>latex2html</strong>: Conversor de LaTeX para html</li>
+<li><strong>lynx</strong>: Navegador web baseado em modo de texto, ou seja, é um web browser que nos permite abrir todo o tipo de páginas visualizando apenas os textos elinks, não vendo assim as imagens, e sendo por isso bastante rápido, mas requere prática para ser manuseado</li>
+<li><strong>netscape</strong>: Navegador web da Netscape</li>
+<li><strong>sitecopy</strong>: Aplicação que nos permite manter fácil e remotamente web sites</li>
+<li><strong>weblint</strong>: Verificador de sintaxes e de estilos html</li>
+</ul>
+<p>&nbsp;</p>
+<h2 id="Op.2BAOcA9Q-es">Opções</h2>
+<p class="line862">O comportamento padrão para um comando pode ser modificado por adicionar uma <strong>&#8212;<em>opção</em></strong> para o comando. O comando <strong>ls</strong>, por exemplo, tem uma opção <strong>-s</strong> , de forma que <strong>&#8220;ls -s&#8221;</strong> incluirá o tamanho dos arquivos na listagem realizada. Há também uma opção <strong>-h</strong> para que esses dados estejam em um formato &#8220;legível para humanos&#8221;. <span id="line-409" class="anchor"></span><span id="line-410" class="anchor"></span></p>
+<p class="line862">As opções podem ser agrupadas, sendo possível, por exemplo usar <strong>&#8220;ls -sh&#8221;</strong>, que funcionará exatamente da mesma forma que <strong>&#8220;ls -s -h&#8221;</strong>. Muitas opções têm uma versão longa, prefixadas por dois traços em vez de um, assim <strong>&#8220;ls &#8211;size &#8211;human-readable&#8221;</strong> é o mesmo comando dado anteriormente. <span id="line-411" class="anchor"></span><span id="line-412" class="anchor"></span></p>
+<h2 id="Dicas_e_Truques">Dicas e Truques</h2>
+<h3 id="Teclas_de_controle_e_atalhos">Teclas de controle e atalhos</h3>
+<div>
+<table>
+<tbody>
+<tr>
+<td>
+<p class="line891"><strong>Teclas</strong></p>
+</td>
+<td>
+<p class="line891"><strong>Ação</strong></p>
+</td>
+</tr>
+<tr>
+<td><span id="line-416" class="anchor"></span></p>
+<p class="line862">Ctrl + f</p>
+</td>
+<td>
+<p class="line862">Move o cursor uma palavra para frente</p>
+</td>
+</tr>
+<tr>
+<td><span id="line-417" class="anchor"></span></p>
+<p class="line862">Ctrl + b</p>
+</td>
+<td>
+<p class="line862">Move o cursor uma palavra para trás</p>
+</td>
+</tr>
+<tr>
+<td><span id="line-418" class="anchor"></span></p>
+<p class="line862">Ctrl + a</p>
+</td>
+<td>
+<p class="line862">Para ir ao início da linha de comando</p>
+</td>
+</tr>
+<tr>
+<td><span id="line-419" class="anchor"></span></p>
+<p class="line862">Ctrl + e</p>
+</td>
+<td>
+<p class="line862">Para ir ao final da linha de comando</p>
+</td>
+</tr>
+<tr>
+<td><span id="line-420" class="anchor"></span></p>
+<p class="line862">Ctrl + t</p>
+</td>
+<td>
+<p class="line862">Inverte o caractere sob o cursor com o anterior</p>
+</td>
+</tr>
+<tr>
+<td><span id="line-421" class="anchor"></span></p>
+<p class="line862">Ctrl + u</p>
+</td>
+<td>
+<p class="line862">Limpa a linha de comando corrente</p>
+</td>
+</tr>
+<tr>
+<td><span id="line-422" class="anchor"></span></p>
+<p class="line862">Ctrl + y</p>
+</td>
+<td>
+<p class="line862">Re-insere o último trecho de comando apagado</p>
+</td>
+</tr>
+<tr>
+<td><span id="line-423" class="anchor"></span></p>
+<p class="line862">Ctrl + r</p>
+</td>
+<td>
+<p class="line862">Faz uma busca incremental no histórico de comandos utilizados</p>
+</td>
+</tr>
+<tr>
+<td><span id="line-424" class="anchor"></span></p>
+<p class="line862">Ctrl + c</p>
+</td>
+<td>
+<p class="line862">Termina a execução do comando corrente</p>
+</td>
+</tr>
+<tr>
+<td><span id="line-425" class="anchor"></span></p>
+<p class="line862">Ctrl + d</p>
+</td>
+<td>
+<p class="line862">Encerra entrada de dados pelo teclado fazendo <strong>logout</strong></p>
+</td>
+</tr>
+<tr>
+<td><span id="line-426" class="anchor"></span></p>
+<p class="line862">Ctrl + m</p>
+</td>
+<td>
+<p class="line862">Equivalente a tecla <strong>Enter</strong></p>
+</td>
+</tr>
+<tr>
+<td><span id="line-427" class="anchor"></span></p>
+<p class="line862">Ctrl + l</p>
+</td>
+<td>
+<p class="line862">Limpa a tela, equivalente ao comando <strong>clear</strong></p>
+</td>
+</tr>
+<tr>
+<td><span id="line-428" class="anchor"></span></p>
+<p class="line862">Ctrl + s</p>
+</td>
+<td>
+<p class="line862">Inibe a exibição de informações na tela de saída</p>
+</td>
+</tr>
+<tr>
+<td><span id="line-429" class="anchor"></span></p>
+<p class="line862">Ctrl + q</p>
+</td>
+<td>
+<p class="line862">Ativa a exibição de informações na tela de saída, inibida pelo Ctrl + s</p>
+</td>
+</tr>
+<tr>
+<td><span id="line-430" class="anchor"></span></p>
+<p class="line862">Ctrl + z</p>
+</td>
+<td>
+<p class="line862">Põe o processo corrente em background (segundo plano)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<table>
+<tbody>
+<tr>
+<td>
+<p class="line891"><img class="attachment" title="Icones/importante.png" src="http://wiki.ubuntu-br.org/Icones?action=AttachFile&amp;do=get&amp;target=importante.png" alt="Icones/importante.png" /></p>
+</td>
+<td>
+<p class="line891"><strong>NOTA:</strong> Para maiores detalhes, veja <a href="http://wiki.ubuntu-br.org/AtalhosDeTecladoNoBash">aqui</a> nossa página exclusiva sobre atalhos de teclado no <a class="http" href="http://pt.wikipedia.org/wiki/Bash">bash</a> e Papel de parede das teclas de atalhos para o uso no terminal, <a class="http" href="http://img16.imageshack.us/img16/4787/teclasdeatalhosparauson.png">clique aqui</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="Teclas_de_emerg.2BAOo-ncia_do_GNU.2FLinux">Teclas de emergência do GNU/Linux</h3>
+<p class="line874">Quem é que já não se deparou com um travamento causado por mal-funcionamento de hardware no Linux? Este tópico ensina a usar as teclas de emergência do kernel. <span id="line-436" class="anchor"></span><span id="line-437" class="anchor"></span></p>
+<div>
+<table>
+<tbody>
+<tr>
+<td>
+<p class="line891"><img class="attachment" title="Icones/importante.png" src="http://wiki.ubuntu-br.org/Icones?action=AttachFile&amp;do=get&amp;target=importante.png" alt="Icones/importante.png" /></p>
+</td>
+<td>
+<p class="line891"><strong>NOTA:</strong> As teclas de emergência do kernel são comandos de baixo nível pouco conhecidos que podem desempenhar uma função primordial na vida de usuários Linux.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="line867"><strong>Desligando o computador</strong> <span id="line-440" class="anchor"></span><span id="line-441" class="anchor"></span></p>
+<p class="line874">A primeira combinação de emergência é usada para sincronizar os discos e desligar o computador instantaneamente evitando problemas nos sistemas de arquivos. Ela é ideal para quem precisa desligar o computador rapidamente sem danificar seus sistemas de arquivos, ou quando a máquina trava e por qualquer motivo não permite um desligamento natural através do init. <span id="line-442" class="anchor"></span><span id="line-443" class="anchor"></span></p>
+<pre><span id="line-1-3" class="anchor"></span>Mantendo ALT pressionado, tecle Print Screen e depois O.</pre>
+<p class="line867"><strong>Reiniciando o computador</strong> <span id="line-448" class="anchor"></span><span id="line-449" class="anchor"></span></p>
+<p class="line874">Assim como o Ctrl+Alt+Del do MS-DOS o kernel do Linux também possui uma chamada de emergência que permite reiniciar a máquina, com a vantagem de sincronizar os discos evitando danos no sistema de arquivos. Veja como fazer: <span id="line-450" class="anchor"></span><span id="line-451" class="anchor"></span></p>
+<pre><span id="line-1-4" class="anchor"></span>Mantendo ALT pressionado, tecle Print Screen e depois B.</pre>
+<p class="line867"><strong>Sincronizando os discos</strong> <span id="line-456" class="anchor"></span><span id="line-457" class="anchor"></span></p>
+<p class="line874">Se você acha que a força vai cair e precisa trabalhar até a ultima hora mas tem medo de danificar seu sistema de arquivo, poderá sincronizar seus discos de tempos em tempos. <span id="line-458" class="anchor"></span><span id="line-459" class="anchor"></span></p>
+<p class="line874">Para sincronizar discos em caso de emergência: <span id="line-460" class="anchor"></span><span id="line-461" class="anchor"></span></p>
+<pre><span id="line-1-5" class="anchor"></span>Mantendo ALT pressionado, tecle Print Screen e depois S.</pre>
+<p class="line867"><strong>Segurança</strong> <span id="line-466" class="anchor"></span><span id="line-467" class="anchor"></span></p>
+<p class="line874">Se por algum motivo algo está ameaçando a segurança do seu sistema, como a execução acidental de um script malicioso como root ou de programa desconhecido, poderá colocar os discos como somente leitura e evitar danos mais sérios. <span id="line-468" class="anchor"></span><span id="line-469" class="anchor"></span></p>
+<pre><span id="line-1-6" class="anchor"></span>Mantendo ALT pressionado, tecle Print Screen e depois U.</pre>
+<h3 id="Otimizando_o_desempenho_do_history_com_navega.2BAOcA4w-o_contextual">Otimizando o desempenho do history com navegação contextual</h3>
+<p class="line862">Como sabemos o ambiente shell do GNU/Linux, no caso o bash, mantém no arquivo <strong>.bash_history</strong> uma lista com o histórico dos últimos comandos digitados. Com isso e o uso das teclas direcionais <em>UP</em> e <em>DOWN</em> nos permitem &#8220;navegar&#8221; por esta lista, de modo a retornar com um comando já utilizado e que esteja em nosso histórico armazenado. <span id="line-475" class="anchor"></span><span id="line-476" class="anchor"></span></p>
+<p class="line874">Porém por padrão esta navegação será por toda gama de comando já utilizados, o que por vezes faz com que percamos até mais tempo necessário do que se digitarmos novamente o comando. <span id="line-477" class="anchor"></span><span id="line-478" class="anchor"></span></p>
+<p class="line874">Com uma dica simples veremos então como fazer com que esta navegação seja otimizada de forma a permitir uma filtragem no histórico de comandos bastando inserir alguns caracteres do mesmo antes de usarmos as setas de navegação. <span id="line-479" class="anchor"></span><span id="line-480" class="anchor"></span></p>
+<p class="line874">Agora as setas farão uma procura por contexto. Se você não digitar nada, o efeito será o mesmo que antes, mas se você digitar um caractere e pressionar a seta, ele só irá mostrar os comandos que comecem com aquele caractere. Portanto com este ajuste, se você digitar &#8220;ls&#8221; e pressionar a seta ele vai navegar apenas nos comandos que começam com &#8220;ls&#8221;. <span id="line-481" class="anchor"></span><span id="line-482" class="anchor"></span></p>
+<p class="line862">Para que isso funcione desta forma primeiramente iremos criar no diretório $HOME do usuário desejado o arquivo oculto de nome <strong>.inputrc</strong> com o seguinte conteúdo abaixo: <span id="line-483" class="anchor"></span><span id="line-484" class="anchor"></span></p>
+<pre><span id="line-1-7" class="anchor"></span>“\e[A”: history-search-backward
+<span id="line-2-3" class="anchor"></span>“\e[B”: history-search-forward</pre>
+<p class="line874">Agora basta fechar a seção atual e abrir uma nova para que a navegação no histórico dos comandos passe a funcionar desta forma mais otimizada. <span id="line-490" class="anchor"></span><span id="line-491" class="anchor"></span></p>
+<p class="line867"><strong>Notas</strong>: <span id="line-492" class="anchor"></span><span id="line-493" class="anchor"></span></p>
+<ul>
+<li>
+<p class="line862">Por padrão o Linux armazena no <strong>.bash_history</strong> os últimos 500 comandos utilizados, mais este número pode ser modificado editando o seu arquivo <strong>.bashrc</strong> e adicionado as seguintes linhas: <span id="line-494" class="anchor"></span><span id="line-495" class="anchor"></span></p>
+</li>
+</ul>
+<pre><span id="line-1-8" class="anchor"></span>export HISTFILESIZE=XXXX
+<span id="line-2-4" class="anchor"></span>export HISTSIZE=XXXX</pre>
+<p class="line874">Onde, XXXX deve ser substituído pela quantidade desejada. <span id="line-501" class="anchor"></span><span id="line-502" class="anchor"></span></p>
+<ul>
+<li>
+<p class="line862">Como configuração padrão do sistema como um todo existe o arquivo <strong>/etc/inputrc</strong>, ou seja, caso se deseje que estas novas configurações passem a valer para todos usuários do sistema basta adicionar aquelas 2 linhas do <strong>.inputrc</strong> neste arquivo. <span id="line-503" class="anchor"></span><span id="line-504" class="anchor"></span></p>
+</li>
+</ul>
+<h3 id="Usando_.22grep.22_com_resultados_coloridos">Usando &#8220;grep&#8221; com resultados coloridos</h3>
+<p class="line862">Quem costuma usar o <strong><a href="http://wiki.ubuntu-br.org/ComandosBasicos#head-b67be5a3f1f9ee8e669cddec9f9781f0d463bd46">grep</a></strong> para fazer filtragens, pode se beneficiar desta pequena e simples dica, fazendo a saída dos resultados ficarem coloridas em destaque. <span id="line-506" class="anchor"></span><span id="line-507" class="anchor"></span></p>
+<pre><span id="line-1-9" class="anchor"></span>grep --color=auto</pre>
+<p class="line874">Vamos a um exemplo pratico para entender melhor: <span id="line-512" class="anchor"></span><span id="line-513" class="anchor"></span></p>
+<pre><span id="line-1-10" class="anchor"></span>ps aux |grep --color=auto tty</pre>
+<p class="line867"><strong>Nota</strong>: <span id="line-518" class="anchor"></span><span id="line-519" class="anchor"></span></p>
+<p class="line862">Quem gostar do resultado e desejar deixar como padrão, basta editar seu arquivo <strong>~/.bashrc</strong> criando um <strong>alias</strong> para o comando <strong>grep</strong> conforme abaixo demonstrado. <span id="line-520" class="anchor"></span><span id="line-521" class="anchor"></span></p>
+<p class="line874">1. Abra o arquivo em seu editor de texto favorito. <span id="line-522" class="anchor"></span><span id="line-523" class="anchor"></span></p>
+<pre><span id="line-1-11" class="anchor"></span>vim ~/.bashrc</pre>
+<p class="line874">2. Adicione a linha baixo no mesmo, e salve o arquivo. <span id="line-528" class="anchor"></span><span id="line-529" class="anchor"></span></p>
+<pre><span id="line-1-12" class="anchor"></span>alias grep='grep --color=auto'</pre>
+<p class="line874">3. Agora, basta executar o comando abaixo que este recurso será padrão para este seu usuário. <span id="line-534" class="anchor"></span><span id="line-535" class="anchor"></span></p>
+<pre><span id="line-1-13" class="anchor"></span>source ~/.bashrc</pre>
+<h2 id="Obtendo_ajuda">Obtendo ajuda</h2>
+<h3 id="Nosso_maior_aliado">Nosso maior aliado</h3>
+<p class="line867"><img title="Warning /!\" src="http://wiki.ubuntu-br.org/moin_static193/light/img/icon_eek.png" alt="Warning /!\" width="16" height="16" /> Os comandos <strong>&#8211;help</strong> e <strong>man</strong> podem ser consideradas as duas ferramentas mais importantes em uma linha de comando. <span id="line-542" class="anchor"></span><span id="line-543" class="anchor"></span></p>
+<p class="line862">Praticamente todos os comando entendem a opção <strong>-h</strong> (ou <strong>&#8211;help</strong>), a qual produzirá uma descrição breve e útil do comando e suas opções, e então volta para o terminal. Tente <strong>&#8220;man -h&#8221;</strong> ou <strong>&#8220;man &#8211;help&#8221;</strong> para ver isso em ação. <span id="line-544" class="anchor"></span><span id="line-545" class="anchor"></span></p>
+<p class="line862">Todo comando e quase toda aplicação em Linux terá um arquivo man (manual), e encontrá-lo será muito simples. Basta digitar <strong>”man comando”</strong> para surgir um manual extenso para o comando especificado. Por exemplo, <strong>&#8220;man mv&#8221;</strong> mostrará o manual de <strong>mv</strong> (Move). <span id="line-546" class="anchor"></span><span id="line-547" class="anchor"></span></p>
+<p class="line862">Mova para cima ou para baixo no arquivo <strong>man</strong> utilizando as teclas <strong>Page UP</strong> e <strong>Page Down</strong> ou as setas no teclado, e retorne para a linha de comando teclando <strong>q</strong>. <span id="line-548" class="anchor"></span><span id="line-549" class="anchor"></span></p>
+<p class="line867"><strong>&#8220;man man&#8221;</strong> mostrará a entrada do manual para o comando <strong>man</strong>, e este é um bom lugar para começar! <span id="line-550" class="anchor"></span><span id="line-551" class="anchor"></span></p>
+<p class="line867"><strong>&#8220;man intro&#8221;</strong> é especialmente útil, pois mostrará a &#8220;Introdução para comandos do usuário&#8221; que é uma introdução breve e bem escrita sobre a linha de comando. <span id="line-552" class="anchor"></span><span id="line-553" class="anchor"></span></p>
+<p class="line862">Além disso, há as páginas de <strong>info</strong>, que geralmente serão mais detalhados, se aprofundando mais do que as páginas <strong>man</strong>. Tente <strong>&#8220;info info&#8221;</strong> para uma introdução às páginas info. <span id="line-554" class="anchor"></span><span id="line-555" class="anchor"></span></p>
+<p class="line867"><strong>Procurando por arquivos &#8220;man&#8221;</strong> <span id="line-556" class="anchor"></span><span id="line-557" class="anchor"></span></p>
+<p class="line874">Se você não está certo de qual comando ou aplicação você precisa usar, você pode tentar procurando os manuais (arquivos &#8220;man&#8221;). <span id="line-558" class="anchor"></span><span id="line-559" class="anchor"></span></p>
+<ul>
+<li>
+<p class="line891"><strong>&#8220;man -k foo&#8221;</strong> irá procurar manuais para <em>foo</em>. Tente <strong>&#8220;man -k nautilus&#8221;</strong> para ver como isso funciona. <span id="line-560" class="anchor"></span></p>
+<ul>
+<li>
+<p class="line862">Observe que isso é o mesmo que o comando <strong>apropos</strong>. <span id="line-561" class="anchor"></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p class="line891"><strong>&#8220;man -f foo&#8221;</strong> procura apenas os títulos dos manuais do seu sistema. Tente <strong>&#8220;man -f gnome&#8221;</strong>, por exemplo. <span id="line-562" class="anchor"></span></p>
+<ul>
+<li>
+<p class="line862">Isso é o mesmo que o comando <strong>whatis</strong>. <span id="line-563" class="anchor"></span><span id="line-564" class="anchor"></span></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Outras_fontes_de_consulta">Outras fontes de consulta</h3>
+<p class="line874">Para maiores informações e detalhes sobre os comandos aqui apresentados, além da consulta as páginas de manuais do seu sistema recomendamos uma visita aos sites abaixo, que também serviram de poderosa fonte de pesquisa para desenvolvimento desta página. <span id="line-566" class="anchor"></span></p>
+<ul>
+<li>
+<p class="line891"><a class="http" href="http://wiki.ubuntu-br.org/Linhas%20de%20Comando%20Bash%20para%20Linux">Linhas de Comando Bash para Linux</a>. <span id="line-567" class="anchor"></span></p>
+</li>
+<li>
+<p class="line891"><a class="http" href="http://linuxcommand.org/">Man pages, tutoriais básicos de BASH, e shell script</a>. <span id="line-568" class="anchor"></span></p>
+</li>
+<li>
+<p class="line891"><a class="http" href="http://www.uniriotec.br/%7Emorganna/guia/introd_guia.html">Guia de Referência do Linux</a>. <span id="line-569" class="anchor"></span></p>
+</li>
+<li>
+<p class="line891"><a class="http" href="http://pt.wikipedia.org/">Wikipédia-PT</a>. <span id="line-570" class="anchor"></span></p>
+</li>
+<li>
+<p class="line891"><a class="http" href="http://www.vivaolinux.com.br/dica/Man-pages-em-portugues/">Man pages em português</a> <span id="line-571" class="anchor"></span><span id="line-572" class="anchor"></span></p>
+</li>
+</ul>
+<h2 id="Informa.2BAOcA9Q-es_adicionais">Informações adicionais</h2>
+<ul>
+<li>
+<p class="line891"><a href="http://wiki.ubuntu-br.org/AptGet">AptGet</a> &#8211; Howto &#8211; usando o apt-get para instalar pacotes pela linha de comando. <span id="line-574" class="anchor"></span></p>
+</li>
+<li>
+<p class="line891"><a href="http://wiki.ubuntu-br.org/AdicionandoRepositorios">AdicionandoRepositorios</a> &#8211; adicionando os repositórios Universe/Multiverse usando a linha de comando.</p>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p>Com isso finalizamos este artigo, onde foi mostrado uma boa parte dos comandos mais usados encontrados no linux.</p>
+<p>&nbsp;</p>
+    
+    <p>
+        Posted in: <a href="http://lbrvirtual.com.br/blog/index.php/category/linux/desktop/" rel="category tag">Desktop</a>, <a href="http://lbrvirtual.com.br/blog/index.php/category/linux/kernel/" rel="category tag">Kernel</a>, <a href="http://lbrvirtual.com.br/blog/index.php/category/linux/" rel="category tag">Linux</a>, <a href="http://lbrvirtual.com.br/blog/index.php/category/linux/servidor/" rel="category tag">Servidor</a>            </p>
+    
+    <div class="clear"></div>
+    
+</div><!-- .post -->
+
+<div class="clear"></div>
+    <div class="nav-links">
+          <div class="floatleft"><a href="http://lbrvirtual.com.br/blog/index.php/2015/09/12/instalando-e-configurando-o-noip-no-linux/" rel="prev">&laquo; Instalando e configurando o noip no linux</a></div>          <div class="floatright"><a href="http://lbrvirtual.com.br/blog/index.php/2015/09/13/instalando-e-configurando-o-bind9-no-ubuntudebian/" rel="next">Instalando e Configurando o Bind9 no Ubuntu/Debian &raquo; </a></div>    </div>
+    
+ <div class="clear"></div>   
+       
+    
+<div class="clear"></div>
+
+    <div class="comments">
+    
+
+				<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Deixe uma resposta <small><a rel="nofollow" id="cancel-comment-reply-link" href="/blog/index.php/2015/09/12/comandos-importantes-linux/#respond" style="display:none;">Cancelar resposta</a></small></h3>				<form action="http://lbrvirtual.com.br/blog/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+					<p class="comment-notes"><span id="email-notes">O seu endereço de e-mail não será publicado.</span> Campos obrigatórios são marcados com <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comentário</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><p class="comment-form-author"><label for="author">Nome <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">E-mail <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Site</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Publicar comentário" /> <input type='hidden' name='comment_post_ID' value='87' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="1a3bd18635" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="141"/></p>				</form>
+					</div><!-- #respond -->
+		</div>	
+</div><!-- column-three-fourth ends -->
+
+<!--Right Sidebar Starts--> 
+<div class="sidebar">
+	        	    <div class="widget">
+          <h2 class="widget-title">Search</h2>
+            	<form method="get" id="searchform" class="searchform" action="http://lbrvirtual.com.br/blog/" role="search">
+<input type="text" class="searchinput" name="s" value="" id="s"
+        placeholder="To search, type and hit enter..." />
+		<input style="display:none;" type="submit" class="submit" id="searchsubmit" value="Search" />
+	</form>        </div>
+    </div>
+<!--Right Sidebar Ends--> <div class="clear"></div>
+	</div> <!-- Container ends -->
+</div> <!-- Wrap ends-->
+
+<div class="clear"></div>
+<!--Full width footer starts here-->
+<div id="footer">
+	<div class="footerwrap">
+		<div class="clear"></div>
+
+    <div class="footercopyright">
+     Copyright &copy; 2016 Blog da Liberty. Powered by 
+                        <a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="http://www.techtivesolutions.com/wpthemes/ezyreader/" title="ezyreader">ezyreader</a>
+    
+    </div>
+
+	</div>
+</div>
+<script type='text/javascript' src='http://lbrvirtual.com.br/blog/wp-content/plugins/akismet/_inc/form.js?ver=3.1.10'></script>
+<script type='text/javascript' src='http://lbrvirtual.com.br/blog/wp-content/themes/ezyreader/js/dropmenu.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://lbrvirtual.com.br/blog/wp-includes/js/comment-reply.min.js?ver=4.5.3'></script>
+<script type='text/javascript' src='http://lbrvirtual.com.br/blog/wp-includes/js/wp-embed.min.js?ver=4.5.3'></script>
+</body>
+</html>
